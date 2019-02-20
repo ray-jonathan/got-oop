@@ -39,4 +39,7 @@ mittens = Monster("Mittens the Kitten", "mitten.jpeg")
 print(bronn.greet(arya))
 print(jon.greet(bronn))
 
-#
+# Monster should be able to `.groan` a Character or Hero
+print(mittens.groan(arya))
+print(mittens.groan(bronn))
+print(bronn.attack(mittens))

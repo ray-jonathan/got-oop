@@ -27,12 +27,18 @@ class Character():
 # Hero is a subclass of Character
 # Hero inherits from character
 # Character is the super class of Hero (aka parent)
+
+
 class Hero(Character):
-    pass
+    def attack(self, someone=None):
+        if someone is not None:
+            return "Who do you think you are, %s?! You're going to regret tangling with me!" % (someone.name,)
+        else:
+            return "Who do you think you are?! You're going to regret tangling with me!"
 
 class Monster(Character):
     def groan(self, someone=None):
         if someone is not None:
-            return "Grrgrg, %s, I am %s. I post a threat to you grgrgrgr." % (someone.name,self.name)
+            return "Grrgrg, %s, I am %s. I pose a threat to you grgrgrgr." % (someone.name,self.name)
         else:
-            return "Grrgrg, I am %s. I post a threat to you grgrgrgr." % (self.name,)
+            return "Grrgrg, I am %s. I pose a threat to you grgrgrgr." % (self.name,)
