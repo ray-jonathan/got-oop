@@ -13,5 +13,8 @@ print(jon.name, jon.avatar)
 
 arya.inventory.append("sword")
 arya.inventory.append("mask")
+jon.inventory.append("dragon glass")
+
 
 print(len(arya.inventory))
+print(len(jon.inventory))
