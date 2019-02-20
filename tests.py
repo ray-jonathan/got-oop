@@ -20,7 +20,11 @@ print(len(arya.inventory))
 print(len(jon.inventory))
 
 # arya should hava a `greet` method
+# and when I call it with `arya.greet()`, it should return 
+# "Hello,I am Arya Stark. You killed my father. Prepare to die."
+print(arya.greet())
+
+# arya should hava a `greet` method
 # and when I call it with `arya.greet(jon)`, it should return 
 # "Hello, Jon Snow, I am Arya Stark. You killed my father. Prepare to die."
-
 print(arya.greet(jon))
