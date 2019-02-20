@@ -29,3 +29,10 @@ class Character():
 # Character is the super class of Hero (aka parent)
 class Hero(Character):
     pass
+
+class Monster(Character):
+    def groan(self, someone=None):
+        if someone is not None:
+            return "Grrgrg, %s, I am %s. I post a threat to you grgrgrgr." % (someone.name,self.name)
+        else:
+            return "Grrgrg, I am %s. I post a threat to you grgrgrgr." % (self.name,)
