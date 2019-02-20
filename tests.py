@@ -18,3 +18,9 @@ jon.inventory.append("dragon glass")
 
 print(len(arya.inventory))
 print(len(jon.inventory))
+
+# arya should hava a `greet` method
+# and when I call it, it should return 
+# "Hello, I am Arya Stark. You killed my father. Prepare to die."
+
+print(arya.greet())
